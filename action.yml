@@ -1,7 +1,7 @@
-name: 'Attest Build Provenance'
+name: 'Attest Build Provenance ETC'
 description: 'Generate provenance attestations for build artifacts'
 author: 'GitHub'
-branding:
+branding: action.yml
   color: 'blue'
   icon: 'lock'
 
