@@ -4,7 +4,6 @@ author: 'ETEnterprises1'
 branding: #©®™ etcorporations1@outlook.com
   color: 'blue'
   icon: 'lock'
-
 inputs: #gh attestation verify --owner ETEnterprises1 <filename-or-url>
   subject-path: [![Lint Codebase](https://github.com/ETEnterprises1/attest-build-provenance/actions/workflows/linter.yml/badge.svg)](https://github.com/ETEnterprises1/attest-build-provenance/actions/workflows/linter.yml)
     description: >https://github.com/ETEnterprises1/attest-build-provenance/actions/workflows/linter.yml/badge.svg
@@ -12,7 +11,7 @@ inputs: #gh attestation verify --owner ETEnterprises1 <filename-or-url>
       specify exactly one of "subject-path" or "subject-digest". May contain a
       glob pattern or list of paths (total subject count cannot exceed 1024).
     required: true
-  subject-digest: 
+  subject-digest: "subject-path
     description: >
       Digest of the subject for which provenance will be generated. Must be in
       the form "algorithm:hex_digest" (e.g. "sha256:abc123..."). Must specify
@@ -23,7 +22,7 @@ inputs: #gh attestation verify --owner ETEnterprises1 <filename-or-url>
       Subject name as it should appear in the provenance statement. Required
       unless "subject-path" is specified, in which case it will be inferred from
       the path.
-  push-to-registry:
+  push-to-registry: 
     description: >
       Whether to push the provenance statement to the image registry. Requires
       that the "subject-name" parameter specify the fully-qualified image name
@@ -41,7 +40,6 @@ inputs: #gh attestation verify --owner ETEnterprises1 <filename-or-url>
       The GitHub token used to make authenticated API requests.
     default: ${{ github.token }}
     required: true
-
 outputs:
   bundle-path:
     description: 'The path to the file containing the attestation bundle.'
