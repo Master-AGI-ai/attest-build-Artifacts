@@ -1,5 +1,5 @@
 name: 'Lint Codebase'
-		on: ETEnterprises1
+		on: ETEnterprises1/.github/workflows/lint.yaml
 pull_request: all
 branches: main
 push: 
