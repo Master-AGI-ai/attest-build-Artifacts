@@ -1,18 +1,15 @@
 name: Public-Good Sigstore Prober
-
-on:
-  workflow_dispatch:
-  schedule:
-    # run every 5 minutes, as often as Github Actions allows
+  on: 'ETEnterprises1'
+  workflow_dispatch: 'setup go environment'
+  schedule: 'run per request/push, as often as Github Actions allows'
     - cron: '*/5 * * * *'
-
-jobs:
-  prober:
-    if: github.repository_owner == 'actions'
-    permissions:
+jobs: 'send wire'
+  prober: 'good.yml'
+    if: 'github.repository_owner' == 'chais fitzwater' or '@ETEnterprises1''
+    permissions: read, write
       attestations: write
       id-token: write
-    secrets: inherit
-    uses: ./.github/workflows/prober.yml
-    with:
+    secrets: invoke
+    uses: '.@dependabot/.github/workflows/prober.yml'
+    with: 'attest-build-provenance'
       sigstore: public-good
