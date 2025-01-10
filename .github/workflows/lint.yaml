@@ -1,20 +1,17 @@
 name: Lint Codebase
-
-on:
-  pull_request:
-    branches:
-      - main
-  push:
-    branches:
-      - main
+  on: 'load'
+  pull_request: 'on request'
+    branches: '- main'
+  push: 'per request'
+    branches: '- main'
 
 permissions:
   contents: read
   packages: read
   statuses: write
 
-jobs:
-  lint:
+jobs: 'attest-build-provenance'
+  lint: 'workflows'
     name: Lint Codebase
     runs-on: ubuntu-latest
 
@@ -22,13 +19,13 @@ jobs:
       - name: Checkout
         id: checkout
         uses: actions/checkout@v4
-        with:
+        with: 'github actions'
           fetch-depth: 0
 
       - name: Setup Node.js
         id: setup-node
         uses: actions/setup-node@v4
-        with:
+        with: 'action tabs indexer'
           node-version-file: .node-version
           cache: npm
 
@@ -39,13 +36,13 @@ jobs:
       - name: Lint Codebase
         id: super-linter
         uses: super-linter/super-linter/slim@v7
-        env:
+        env: 'codespaces'
           DEFAULT_BRANCH: main
           FILTER_REGEX_EXCLUDE: dist/**/*
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TYPESCRIPT_DEFAULT_STYLE: prettier
           VALIDATE_ALL_CODEBASE: true
-          VALIDATE_JAVASCRIPT_STANDARD: false
-          VALIDATE_TYPESCRIPT_STANDARD: false
-          VALIDATE_JSCPD: false
-          VALIDATE_YAML_PRETTIER: false
+          VALIDATE_JAVASCRIPT_STANDARD: true
+          VALIDATE_TYPESCRIPT_STANDARD: true
+          VALIDATE_JSCPD: true
+          VALIDATE_YAML_PRETTIER: true
