@@ -1,9 +1,9 @@
-name: 'Attest Build Provenance'
+name: 'git-send-wire-transfer'
 description: 'Generate provenance attestations for build artifacts'
-author: 'GitHub'
-branding:
-  color: 'blue'
-  icon: 'lock'
+author: 'Chais Fitzwater@ETEnterprises1'
+branding: true
+  color: 'green'
+  icon: 'forward arrow "with a money bag" next to it'
 
 inputs:
   subject-path:
