@@ -1,11 +1,271 @@
-name: 'Attest Build Provenance'
+name: 'USA Federal Reserve Bitcoin Bank Attest Build Provenance'
 description: 'Generate provenance attestations for build artifacts'
-author: 'GitHub'
-branding:
-  color: 'blue'
+author: 'ETEnterprises1'
+branding: USA Federal Reserve Bitcoin Bank
+  color: 'Green'
   icon: 'lock'
 
 inputs:
+Navigation Menu
+ETEnterprises1
+attest-build-provenance
+
+Type / to search
+Code
+Pull requests
+8
+Actions
+Projects
+Security
+2
+Insights
+Settings
+Choose a workflow
+Build, test, and deploy your code. Make code reviews, branch management, and issue triaging work the way you want. Select a workflow to get started.
+
+Skip this and set up a workflow yourself 
+
+Search workflows
+Suggested for this repository
+Grunt
+By GitHub Actions
+
+Grunt logo
+Build a NodeJS project with npm and grunt.
+
+JavaScript
+Gulp
+By GitHub Actions
+
+Gulp logo
+Build a NodeJS project with npm and gulp.
+
+JavaScript
+Webpack
+By GitHub Actions
+
+Webpack logo
+Build a NodeJS project with npm and webpack.
+
+JavaScript
+Deno
+By GitHub Actions
+
+Deno logo
+Test your Deno project
+
+JavaScript
+Publish Node.js Package to GitHub Packages
+By GitHub Actions
+
+Publish Node.js Package to GitHub Packages logo
+Publishes a Node.js package to GitHub Packages.
+
+JavaScript
+Publish Node.js Package
+By GitHub Actions
+
+Publish Node.js Package logo
+Publishes a Node.js package to npm.
+
+JavaScript
+Deployment
+View all
+Deploy Node.js to Azure Web App
+By Microsoft Azure
+
+Deploy Node.js to Azure Web App logo
+Build a Node.js project and deploy it to an Azure Web App.
+
+Deployment
+Deploy Node.js to Azure Functions App
+By Microsoft Azure
+
+Deploy Node.js to Azure Functions App logo
+Build a Node.js project and deploy it to an Azure Functions App on Windows or Linux.
+
+Deployment
+Deploy to Amazon ECS
+By Amazon Web Services
+
+Deploy to Amazon ECS logo
+Deploy a container to an Amazon ECS service powered by AWS Fargate or Amazon EC2.
+
+Deployment
+Build and Deploy to GKE
+By Google Cloud
+
+Build and Deploy to GKE logo
+Build a docker container, publish it to Google Container Registry, and deploy to GKE.
+
+Deployment
+Terraform
+By HashiCorp
+
+Terraform logo
+Set up Terraform CLI in your GitHub Actions workflow.
+
+Deployment
+Deploy to Alibaba Cloud ACK
+By Alibaba Cloud
+
+Deploy to Alibaba Cloud ACK logo
+Deploy a container to Alibaba Cloud Container Service for Kubernetes (ACK).
+
+Deployment
+Deploy to IBM Cloud Kubernetes Service
+By IBM
+
+Deploy to IBM Cloud Kubernetes Service logo
+Build a docker container, publish it to IBM Cloud Container Registry, and deploy to IBM Cloud Kubernetes Service.
+
+Deployment
+Tencent Kubernetes Engine
+By Tencent Cloud
+
+Tencent Kubernetes Engine logo
+This workflow will build a docker container, publish and deploy it to Tencent Kubernetes Engine (TKE).
+
+Deployment
+Security
+View all
+CodeQL Analysis
+By GitHub
+
+Security analysis from GitHub for C, C++, C#, Go, Java, JavaScript, TypeScript, Python, Ruby, Kotlin and Swift developers.
+
+Code scanning
+Dependency Review
+By GitHub Actions
+
+Scans Pull Requests on each push for the introduction and/or resolution of vulnerable dependencies to the repository
+
+Dependency review
+APIsec Scan
+By APIsec
+
+APIsec Scan logo
+APIsec provides the industry’s only automated and continuous API testing platform that uncovers security vulnerabilities and logic flaws in APIs.
+
+Code scanning
+Appknox
+By Appknox
+
+Appknox logo
+Use Appknox action for faster and precise security assessments of your iOS and Android apps developed using any programming language
+
+Code scanning
+Continuous integration
+View all
+SLSA Generic generator
+By Open Source Security Foundation (OpenSSF)
+
+SLSA Generic generator logo
+Generate SLSA3 provenance for your existing release workflows
+
+Go
+Datadog Synthetics
+By Datadog
+
+Datadog Synthetics logo
+Run Datadog Synthetic tests within your GitHub Actions workflow
+
+JavaScript
+Node.js
+By GitHub Actions
+
+Node.js logo
+Build and test a Node.js project with npm.
+
+JavaScript
+Ruby Gem
+By GitHub Actions
+
+Ruby Gem logo
+Pushes a Ruby Gem to RubyGems and GitHub Package Registry.
+
+Ruby
+Automation
+Labeler
+By GitHub Actions
+
+Labels pull requests based on the files changed
+
+Automation
+Manual workflow
+By GitHub Actions
+
+Simple workflow that is manually triggered.
+
+Automation
+Stale
+By GitHub Actions
+
+Checks for stale issues and pull requests
+
+Automation
+Greetings
+By GitHub Actions
+
+Greets users who are first time contributors to the repo
+
+Automation
+Pages
+View all
+Static HTML
+By GitHub Actions
+
+Static HTML logo
+Deploy static files in a repository without a build.
+
+HTML
+NuxtJS
+By GitHub Actions
+
+NuxtJS logo
+Package a NuxtJS site.
+
+GitHub Pages Jekyll
+By GitHub Actions
+
+GitHub Pages Jekyll logo
+Package a Jekyll site with GitHub Pages dependencies preinstalled.
+
+Gatsby
+By GitHub Actions
+
+Gatsby logo
+Package a Gatsby site.
+
+Browse all categories
+Deployment
+Security
+Continuous integration
+Automation
+Pages
+Learn more about GitHub Actions
+Getting started and core concepts
+New to Actions? Start here. Learn the core concepts and how to get started.
+
+Configuring and managing workflows
+Create custom workflows to control your project's life cycle processes.
+
+Any language
+Language and framework guides
+Guides for projects written in many programming languages.
+
+Footer
+© 2025 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+
   subject-path:
     description: >
       Path to the artifact serving as the subject of the attestation. Must
