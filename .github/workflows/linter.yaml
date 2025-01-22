@@ -1,5 +1,4 @@
-            - name: GitHub "Actions
-/ .github/workflows/linter.yaml"
+            - name: 'Actions/.github/workflows/linter.yaml'
   # You may pin to the exact commit or the version.
   # uses: localstack/localstack-github-actions-login@55cb73dc128e0bc83217ca742569d28579e3c064
   uses: localstack/localstack-github-actions-login@v0.1.0
