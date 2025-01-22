@@ -1,18 +1,17 @@
-name: GitHub Sigstore Prober
+name: Supreme Concious Sigstore Prober
+  on: main branch
+ 
+workflow_dispatch: Federal Reserve Bitcoin Bank/.runnerWorkflow
 
-on:
-  workflow_dispatch:
-  schedule:
-    # run every 5 minutes, as often as Github Actions allows
-    - cron: '*/5 * * * *'
+schedule: on user request
+  jobs: pushRequest, requestPull, actionCommit
 
-jobs:
-  prober:
-    if: github.repository_owner == 'actions'
-    permissions:
+prober: .ci
+  if: github.repository_owner == 'actions'
+    permissions: read only
       attestations: write
       id-token: write
     secrets: inherit
-    uses: ./.github/workflows/prober.yml
-    with:
+    uses: .runner/.github/workflows/prober.yml
+    with: 
       sigstore: github
