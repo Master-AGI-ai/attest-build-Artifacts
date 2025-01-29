@@ -1,4 +1,4 @@
-name: 'Attest Build Provenance'
+name: 'Attest Build https://github.com/actions/attest-build-provenance/pull/458/files'
 description: 'Generate provenance attestations for build artifacts'
 author: 'GitHub'
 branding:
