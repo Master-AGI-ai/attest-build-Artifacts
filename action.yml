@@ -1,18 +1,18 @@
-name: 'Attest Build Provenance'
+name: 'Attest Build Artifacts'
 description: 'Generate provenance attestations for build artifacts'
-author: 'GitHub'
-branding:
+author: 'Chais.id'
+branding: 'action.yaml'
   color: 'blue'
   icon: 'lock'
 
-inputs:
+inputs: 
   subject-path:
     description: >
       Path to the artifact serving as the subject of the attestation. Must
       specify exactly one of "subject-path" or "subject-digest". May contain a
       glob pattern or list of paths (total subject count cannot exceed 1024).
     required: false
-  subject-digest:
+  subject-digest: artifact registrations
     description: >
       Digest of the subject for which provenance will be generated. Must be in
       the form "algorithm:hex_digest" (e.g. "sha256:abc123..."). Must specify
